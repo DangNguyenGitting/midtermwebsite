@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <form action="/contact" method="post">
+    
+    <label for="FirstName">Your First Name</label>
+    <input type="text" id="FirstName" name="FirstName" required>
+    <label for="LastName">Your Last Name</label>
+    <input type="text" id="LastName" name="LastName" required>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="PhoneNumber"> Your Phone Number</label>
+    <input type="tel" id="PhoneNumber" name="PhoneNumber" required>
+
+    <fieldset id="preferedcontact">
+        <legend>How Should We Contact You?</legend>
+        <input type="radio" id="by-email" name="contact" value="email">
+        <label for="by-email">Email</label>
+        <input type="radio" id="by-phone" name="contact" value="phone">
+        <label for="by-phone">Phone</label>       
+    </fieldset>
+
+    <textarea name="Message" rows="5">Your Message</textarea>
+
+    <button type="submit">Submit Your Information</button>
+    <button type="reset"> Reset Your Form</button>
+    </form>
+
+    <table>
+        <caption>Availability</caption>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>8:30 am</td>
+                <td>5:00 pm</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>8:30 am</td>
+                <td>5:00 pm</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>1:00 pm</td>
+                <td>5:00 pm</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td>1:00 pm</td>
+                <td>5:00 pm</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+            </tr>
+            <tr>
+                <th scope="row">Saturday</th>
+                <td colspan="2">Not Available</td>
+            </tr>
+            <tr>
+                <th scope="row">Sunday</th>
+                <td colspan="2">Not Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>My Working Rates Per Hour (USD)</caption>
+        <thead>
+            <th scope="col">Service</th>
+            <th scope="col">Cost</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Video Editing</th>
+                <td>60.00</td>
+            </tr>
+            <tr>
+                <th scope="row">Graphic Design</th>
+                <td>30.00</td>
+            </tr>
+            <tr>
+                <th scope="row">Marketing Consultations</th>
+                <td>100.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Full Marketing Package</th>
+            <td>190.00</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
