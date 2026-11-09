@@ -13,7 +13,7 @@
   --color-accent: #8501a3;
   --color-border: #767676;
   --color-focus: #005fcc;
-  --color-accent-hover: #cc00ff;
+  --color-accent-hover: #b100e6;
 }
 
 /* Header and Nav */
@@ -76,6 +76,14 @@ button:focus, input:focus, textarea:focus {
   outline-offset: 2px;
 }
 
+a, a:visited {
+  color: var(--color-accent);
+}
+ 
+.skiplink,.skiplink:visited {
+  color: white;
+}
+
 a:hover {
   color: var(--color-accent-hover);
 }
@@ -126,14 +134,7 @@ h4 {
 p {
   margin: 0 0 1rem;
 }
- 
-a, a:visited {
-  color: var(--color-accent);
-}
- 
-.skiplink,.skiplink:visited {
-  color: white;
-}
+
  
 img {
   max-width: 100%;
