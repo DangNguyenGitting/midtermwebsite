@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <title>Midterm Website</title>
 </head>
 <body>
 
+<a href="#main" class="skiplink">Skip to the main content.</a>
+
   <header>
     <a href="index.html">
-        <h1>Name of Website</h1>
+        <h1>Dang Nguyen's Website</h1>
     </a>
     <nav>
       <ul>
@@ -21,42 +24,48 @@
     </nav>
   </header>
 
-  <main>
+  <main id="#main">
     <section>
       <h2>Project Highlights</h2>
 
       <article>
-        <a href="/Main Pages/Subpages/video.html"><img src="https://i.kym-cdn.com/entries/icons/newsfeed/000/049/004/lebronsunshinecover.jpg" alt=""></a>
         <h3>Video Editing</h3>
+        <a href="/Main Pages/projects.html#VideoHeader" aria-label="Hyperlink to Video Editing Section of Projects"><img id="projecthomeicon"  src="Images/LebronVideo.webp" alt="Lebron James taking a video with a phone"></a>
       </article>
  
 
       <article>
-        <a href="Main Pages/Subpages/digital.html"><img src="https://i.kym-cdn.com/entries/icons/newsfeed/000/049/004/lebronsunshinecover.jpg" alt=""></a>
         <h3>Graphic Design</h3>
+        <a href="/Main Pages/projects.html#GraphicHeader" aria-label="Hyperlink to Graphic Design Section of Projects"><img id="projecthomeicon"  src="Images/SpongeBob and Patrick.jpg" alt="Spongebob dunking a basketball while Patrick poses with his arms out."></a>
       </article>
 
 
 
       <article>
-        <a href="Main Pages/Subpages/data.html"><img src="https://i.kym-cdn.com/entries/icons/newsfeed/000/049/004/lebronsunshinecover.jpg" alt=""></a>
         <h3>Data Management and Analytics</h3>
+        <a href="/Main Pages/projects.html#MarketHeader" aria-label="Hyperlink to Market Research Section of Projects"><img id="projecthomeicon"  src="Images/LebronJamesThinking.jpg" alt="Lebron James in a smart looking suit with a hand on his chin."></a>
       </article>
 
 
     </section>
   </main>
 
-  <footer>
-    <h4>Legal / Copyright Jargon</h4>
+<footer>
+    <h4>Legal</h4>
+    <p id="legal">Except for fraud, death, personal injury, or wilful misconduct, each Party's aggregate liability shall not exceed 25,000 EUR. The Supplier shall provide at least seven ( 7 ) days prior written notice of any material deprecation of an API materially affecting the services. Whereas, the Purchaser and the Processor desire to enter into this Statement of Work governed by the laws of Singapore.</p>
     <nav>
-      <ul>
-        <li><a href="mailto:nguy1269@algonquinlive.com">Contact Link / Socials</a></li>
-        <li><a href="mailto:nguy1269@algonquinlive.com">Contact Link / Socials</a></li>
-        <li><a href="mailto:nguy1269@algonquinlive.com">Contact Link / Socials</a></li>
-      </ul>
-    </nav>
-  </footer>
+        <a href="mailto:nguy1269@algonquinlive.com" aria-label="Email Button">
+            <img id="mail" src="/Images/MailImage.webp" alt="">
+        </a>
+
+        <a href="mailto:nguy1269@algonquinlive.com" aria-label="Email Button">
+            <img id="mail" src="/Images/MailImage.webp" alt="">
+        </a>
+
+        <a href="mailto:nguy1269@algonquinlive.com" aria-label="Email Button">
+            <img id="mail" src="/Images/MailImage.webp" alt="">
+        </a>
+</footer>
 
 </body>
 </html>
