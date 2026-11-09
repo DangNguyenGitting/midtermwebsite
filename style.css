@@ -1,3 +1,24 @@
+header {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+  text-align: center;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;            
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 #mail {
     width:30px;
     height:30px;
