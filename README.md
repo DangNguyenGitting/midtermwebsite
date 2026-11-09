@@ -13,3 +13,5 @@ I changed the name of the "Legal" page to "Terms of Service" since it simply jus
 
 The page also is fully focused (for linked products) with a pink outline when tabbing or focusing on content.
 
+Contact Form:
+The contact form was created for business enquiries and times to which the freelancer is available to work. It is constructed to fit this set-up.
