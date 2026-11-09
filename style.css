@@ -1,9 +1,22 @@
+/* Color Palette */
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f3f4f6;
+  --color-text: #1a1a1a;
+  --color-accent: #8501a3;
+  --color-border: #767676;
+  --color-focus: #fc05f3;
+}
+
+/* Header and Nav */
+
 header {
   display: flex;
   flex-direction: column;  
   align-items: center;      
   text-align: center;
   gap: 1rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
 header h1 {
@@ -16,6 +29,13 @@ header nav {
   gap: 1.5rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+ 
+header h1 a {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .mail {
@@ -23,20 +43,7 @@ header nav {
     height:30px;
 }
 
-.projecthomeicon {
-    width: 260px;
-    height:180px;
-}
-
-.ProjectImage {
-    width:560px;
-    height:315px;;
-}
-
-.aboutusimage {
-    width:320px;
-    height:200px;;
-}
+/* Skiplink */
 
 .skiplink {
   position: absolute;
@@ -53,6 +60,250 @@ header nav {
 }
 
 a:focus {
-  outline: 3px solid rgb(252, 5, 243);
+  outline: 3px solid var(--color-focus);
   outline-offset: 2px;
 }
+
+button:focus, input:focus, textarea:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+article a, figure a {
+  display: block;
+}
+
+/* Standard Sizing */
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-background);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+ 
+h1,h2,h3,h4 {
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+ 
+h1 {
+  font-size: 1.5rem;
+}
+ 
+h2 {
+  font-size: 1.75rem;
+}
+ 
+h3 {
+  font-size: 1.375rem;
+}
+ 
+h4 {
+  font-size: 1.125rem;
+}
+ 
+p {
+  margin: 0 0 1rem;
+}
+ 
+a, a:visited {
+  color: var(--color-accent);
+}
+ 
+.skiplink,.skiplink:visited {
+  color: white;
+}
+ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projecthomeicon,.ProjectImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+ 
+.aboutusimage {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+}
+ 
+ 
+/*Page padding*/
+ 
+header,
+main,
+footer {
+  padding: 1.5rem 1rem;
+}
+ 
+/*Main content*/
+ 
+main {
+  display: grid;
+  gap: 2rem;
+  align-content: start;
+}
+ 
+main section {
+  display: grid;
+  gap: 1rem;
+}
+ 
+article {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+}
+ 
+figure {
+  margin: 0;
+}
+ 
+figcaption h4 {
+  margin: 0.75rem 0 0.25rem;
+}
+ 
+figcaption p {
+  margin: 0;
+}
+ 
+iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+ 
+/*Contact form*/
+ 
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+ 
+input[type="text"], input[type="email"], input[type="tel"],textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  border: 1px solid var(--color-border);
+}
+ 
+textarea {
+  margin-top: 1rem;
+}
+ 
+fieldset {
+  margin: 1rem 0 0;
+  border: 1px solid var(--color-border);
+}
+ 
+fieldset label {
+  display: inline-block;
+  margin: 0 1rem 0 0.25rem;
+  font-weight: normal;
+}
+ 
+button {
+  margin: 1rem 0.5rem 0 0;
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  color: var(--color-background);
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+}
+ 
+button[type="reset"] {
+  color: var(--color-accent);
+  background: var(--color-background);
+}
+ 
+/*Tables*/
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+caption {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+}
+ 
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid var(--color-border);
+}
+ 
+thead th, tfoot th, tfoot td {
+  background: var(--color-surface);
+}
+ 
+/*Footer*/
+ 
+footer {
+  border-top: 1px solid var(--color-border);
+}
+ 
+footer h4 {
+  margin: 0;
+}
+ 
+/*Icon row (Flexbox)*/
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+ 
+/* Breakpoint */
+@media (min-width: 53em) {
+  header,
+  main,
+  footer {
+    padding-inline: max(1rem, calc((100% - 60rem) / 2));
+  }
+ 
+  #main section,
+  #projectmain section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  #main section > h2,
+  #projectmain section > h3 {
+    grid-column: 1 / -1;
+  }
+ 
+  #faqmain,
+  #contactmain {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+ 
+  #contactmain form {
+    grid-row: 1 / 3;
+  }
+}
+ 
