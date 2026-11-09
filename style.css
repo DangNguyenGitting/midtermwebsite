@@ -23,17 +23,17 @@ header nav {
     height:30px;
 }
 
-#projecthomeicon {
+.projecthomeicon {
     width: 260px;
     height:180px;
 }
 
-#ProjectImage {
+.ProjectImage {
     width:560px;
     height:315px;;
 }
 
-#aboutusimage {
+.aboutusimage {
     width:320px;
     height:200px;;
 }
