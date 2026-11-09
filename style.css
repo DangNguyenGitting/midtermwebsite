@@ -1,4 +1,7 @@
-/* Color Palette
+/* 
+Color Palette: Colours are named by job 
+(background, surface, text, accent, border, focus, hover), 
+not by how they look. 
    Background: #ffffff
    Surface:    #f3f4f6
    Text:       #1a1a1a
@@ -81,7 +84,7 @@ a, a:visited {
   color: var(--color-accent);
 }
  
-.skiplink,.skiplink:visited {
+.skiplink,.skiplink:visited, .skiplink:hover {
   color: white;
 }
 
@@ -117,19 +120,19 @@ h1,h2,h3,h4 {
 }
  
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
  
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
  
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
  
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
  
 p {
