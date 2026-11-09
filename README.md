@@ -11,7 +11,21 @@ I changed the name of the "Legal" page to "Terms of Service" since it simply jus
 
 ![Accessibility testing on the index page.](/Images/Accessibility.png)
 
-The page also is fully focused (for linked products) with a pink outline when tabbing or focusing on content.
+The page also is fully focused (for linked products) with a purple outline when tabbing or focusing on content.
 
 Contact Form:
 The contact form was created for business enquiries and times to which the freelancer is available to work. It is constructed to fit this set-up.
+
+BreakPoint:
+According to the test using developer tools the breakpoint of the page is approximately 848 pixels - where the page goes from a single column to a multi-column page (and vice versa) without hampering the readability of the page. 
+
+Why Grid: it’s used where items need to line up in rows and columns.
+
+Page layout: header, main content and footer are three rows, and Grid keeps the footer at the bottom of the screen.
+Cards: one column on a phone, three equal columns on a wide screen.
+Contact page: the form takes up two rows on the left, and the two tables stack on the right.
+
+Why Flexbox: it’s used where items sit in one row.
+
+Nav bar: the links sit side by side, with even spacing, and move to a new line on a small screen.
+Footer icons: the three mail icons sit side by side in the same way.
