@@ -13,7 +13,7 @@
   --color-accent: #8501a3;
   --color-border: #767676;
   --color-focus: #005fcc;
-  --color-accent-dark: #5c0073;
+  --color-accent-hover: #cc00ff;
 }
 
 /* Header and Nav */
@@ -77,7 +77,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 a:hover {
-  color: var(--color-accent-dark);
+  color: var(--color-accent-hover);
 }
 
 article > a, figure > a {
