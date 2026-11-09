@@ -1,11 +1,18 @@
-/* Color Palette */
+/* Color Palette
+   Background: #ffffff
+   Surface:    #f3f4f6
+   Text:       #1a1a1a
+   Accent:     #8501a3
+   Border:     #767676
+   Focus:      #005fcc
+*/
 :root {
   --color-background: #ffffff;
   --color-surface: #f3f4f6;
   --color-text: #1a1a1a;
   --color-accent: #8501a3;
   --color-border: #767676;
-  --color-focus: #fc05f3;
+  --color-focus: #005fcc;
 }
 
 /* Header and Nav */
@@ -26,7 +33,6 @@ header h1 {
 header nav {
   display: flex;            
   justify-content: center;
-  gap: 1.5rem;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
