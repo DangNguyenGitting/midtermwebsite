@@ -9,6 +9,15 @@ not by how they look.
    Border:     #767676
    Focus:      #005fcc
    Hover:      #b100e6
+
+   Lighthouse Accessibility Check: The Lighthouse check with each page for
+   accessibility is scored at 100. 
+
+   Zoom 200: When zoomed at 200 percent the contents within the page do not cut
+   off. The content constricts itself into a singular column and does not clip
+   out of those constraints. All the content is legible.
+
+   WCAG: The content within the page matches / is in compliance of the WCAG.
 */
 :root {
   --color-background: #ffffff;
