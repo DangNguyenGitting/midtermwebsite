@@ -31,6 +31,23 @@ header {
   border-bottom: 1px solid var(--color-border);
 }
 
+.sitename {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.sitename a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+header h1.pagetitle {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
 header h1 {
   margin: 0;
 }
@@ -190,7 +207,7 @@ figure {
   margin: 0;
 }
  
-figcaption h4 {
+figcaption h3 {
   margin: 0.75rem 0 0.25rem;
 }
  
@@ -282,8 +299,10 @@ footer {
   border-top: 1px solid var(--color-border);
 }
  
-footer h4 {
+footer h4,
+.footerheading {
   margin: 0;
+  font-size: 1.25rem;
 }
  
 /*Icon row (Flexbox)*/
@@ -308,7 +327,7 @@ footer nav {
   }
  
   #main section > h2,
-  #projectmain section > h3 {
+  #projectmain section > h2 {
     grid-column: 1 / -1;
   }
  
@@ -322,4 +341,3 @@ footer nav {
     grid-row: 1 / 3;
   }
 }
- 
